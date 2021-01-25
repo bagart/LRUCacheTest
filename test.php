@@ -34,14 +34,14 @@ function reader(LRUCacheContract $LRUCache, $dataFileName)
 $dataFileName = 'data.txt';
 $capacity = 500000;
 
-$indexedResult = reader(new LRUCacheIndexed($capacity), $dataFileName);
-var_dump($indexedResult);
+//$indexedResult = reader(new LRUCacheIndexed($capacity), $dataFileName);
+//var_dump($indexedResult);
 
 $linkedResult = reader(new LRUCacheLinked($capacity), $dataFileName);
 var_dump($linkedResult);
 
-var_dump(
-    [
-        'LRUCacheLinked = LRUCacheIndexed' => $linkedResult['crc32'] === $indexedResult['crc32']
-    ]
-);
+//var_dump(
+//    [
+//        'LRUCacheLinked = LRUCacheIndexed' => $linkedResult['crc32'] === $indexedResult['crc32']
+//    ]
+//);
