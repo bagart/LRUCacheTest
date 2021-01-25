@@ -3,7 +3,18 @@ https://leetcode.com/problems/lru-cache/
 
 Done: Index and Linked
 
-## Results:
+## Test
+Prepare test commands (~152mb)
+```php generator.php```
+
+Run:
+
+```time php test.php```
+
+Run:
+```time php test.php```
+
+### Results:
 LRUCacheIndexed
 ```
 $ time php test.php
